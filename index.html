@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .box:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .ads{
+            font-size: medium;
+            font-family: 'Cedarville Cursive', cursive;
+            color: aliceblue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT ASSIGNMENT</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("ajvSdPhl9pDaJ7bS7");
+      })();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24b798db21.js" crossorigin="anonymous"></script>
+<style>
+    .Recipe{
+        width: auto;
+        height: auto;
+        border-radius: 20px;
+    }
+</style>
+</head>
+
+<body>
+    <header >
+
+        <div id="menu" class="fas fa-bars"></div>
+        <h2>Food <span><img class="logo"
+                    src="images/bgmeg.png"
+                    alt="logo">f</span> Meghalya</h2>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="About.html">Aboutus</a></li>
+                <li><a href="#start">Starthere..</a></li>
+                <li><a href="#Contactus">Contactus..</a></li>
+                <li><a href="#Recipe">Recipes..</a></li>
+
+            </ul>
+        </nav>
+
+        <div id="login" class="fa fa-heart"></div>
+
+    </header>
+    <hr>
+
+    <div class="login-form">
+
+        <form action="" method="post">
+            <h2>Food <span><img class="logof"
+                src="images/bgmeg.png"
+                alt="logo">f</span> Meghalya</h2>
+            <p class="page">This eBook includes our most popular 25 receipes in a beautiful,easy to download format.
+                Enter your email and we'll send it right over!</p>
+            <h3>Contact Us</h3>
+            <input type="text" id="fullname" placeholder=" Full Name" required class="box">
+            <br> <br>
+            <input type="email" id="email_id" placeholder="example@gmail.com.." required class="box">
+            <textarea placeholder="Leave a Message.."  id="message" cols="20" rows="5" required class="box"></textarea>
+            <button onclick="SendMail()" class="btn">Send</button>
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+    <section class="home" id="home">
+
+        <h2 class="bio">Recipes from north east</h2>
+        <p class="styledText">A blog on the unique cuisine of north-east India.</p>
+        <p class="styledText">Hello
+            Hi y’all.
+            
+            This is food recipes from north east india.  To put it simply, we hope this will help fill the gap somewhat.  For the less informed, food from north east india is distinct from other provincial cuisines of India. For one, its less involved, yet has amazing diversity of ingredients and flavors. It incorporates some tastes and flavors which are….well..peculiar to the region and consonates more with south asian flavors.
+            
+            We hope people try out some of our posts and add in some of their’s.  I request that you keep the recipes confined to the cuisines of north east indian origin, just for the sake of manageability and clarity of the blog than anything else.</p>
+        <a href="#rice1"><button class="btn">Loadmore...</button></a>
+    </section>
+
+
+    <section class="item">
+
+        <h1 class="heading" id="start">24HOURS</h1>
+
+        <div class="box-container">
+
+            <div class="box" id="lung1">
+                <img src="images/lung.jpg"
+                    alt="Salmon Tacos">
+                <h3 class="price">₹140/</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#lung" class="title">(LUNG)Pickle</a>
+                    <p class="ads">Bamboo shoot....</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 2 hours ago </h3>
+                        <h3><i class="fa fa-heart"></i> 1.1k</h3>
+                        <h3> <i class="fa fa-shopping-cart"></i> 12 ✓</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="dohjem">
+                <img src="images/dohjem.jpg"
+                    alt="Chipotle Quinoa Burgers">
+                <h3 class="price">₹100/</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#dohjem1" class="title">DOHJEM</a>
+                    <p class="ads">Dohjem | Delicious Aromatic Khasi Pork …...</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 5 hours ago </h3>
+                        <h3><i class="fa fa-heart"></i> 2.1k</h3>
+                        <h3> <i class="fa fa-shopping-cart"></i> 12 ✓</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="jadoh">
+                <img src="images/jadoh.jpg"
+                    alt="Pappardelle">
+                <h3 class="price">₹100/</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#jadoh1" class="title">JADOH</a>
+                    <p class="ads">For the true taste of meat | Jadoh | Khasi....</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 9 hours ago </h3>
+                        <h3><i class="fa fa-heart"></i> 11.1k</h3>
+                        <h3> <i class="fa fa-shopping-cart"></i> 12 ✓</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="rymbai">
+                <img src="images/R.jpg"
+                    alt="Walnut Meatballs">
+                <h3 class="price">₹50</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#rymbai1" class="title">RYMBAI</a>
+                    <p class="ads">Tungrymbai or tung rymbái or "tungtoh" is a fermented soybean food.....</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 4 hours ago </h3>
+                        <h3><i class="fa fa-heart"></i> 10.1k</h3>
+                        <h3> <i class="fa fa-shopping-cart"></i> 10 ✓</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="rice">
+                <img src="images/Traditional-khasi-food-1024x857 putharo.jpg"
+                    alt="Instant-pot">>
+                <h3 class="price">₹80</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#rice1" class="title">Khasi Rice</a>
+                    <p class="ads">Khasi Rice Cakes – Meghalaya (all in one).....</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 1 hours ago </h3>
+                        <h3><i class="fa fa-heart"></i> 10.1k</h3>
+                        <h3> <i class="fa fa-shopping-cart"></i> 11 ✓</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="dohkhleh">
+                <img src="images/doohkhleh.jpg"
+                    alt="Vegan">
+                <h3 class="price">₹60</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#dohkhleh1" class="title">DOHKHLEH</a>
+                    <p class="ads">Doh hleh from Meghalaya....</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 7 hours ago </h3>
+                        <h3><i class="fa fa-heart"></i> 17.1k</h3>
+                        <h3> <i class="fa fa-shopping-cart"></i> 15 ✓</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="veg">
+                <img src="images/maxresdefault.jpg"
+                    alt="Vegan">
+                <h3 class="price">₹100/</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#veg1" class="title">VEGS</a>
+                    <p class="ads">'Phan saw and tungtap'. Everyone's all time favourite ...</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 7 hours ago </h3>
+                        <h3><i class="fa fa-heart"></i> 17.1k</h3>
+                        <h3> <i class="fa fa-shopping-cart"></i> 15 ✓</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="street">
+                <img src="images/famous.png"
+                    alt="Vegan">
+                <h3 class="price">₹20/</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#street1" class="title">STREET FOOD</a>
+                    <p class="ads">Famous steet food of Meghalaya....</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 7 hours ago </h3>
+                        <h3><i class="fa fa-heart"></i> 17.1k</h3>
+                        <h3> <i class="fa fa-shopping-cart"></i> 15 ✓</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+<hr class="hr">
+<br><br>
+<h1 class="heading" id="Recipe">RECIPES</h1>
+
+<div class="box-container">
+
+    <div class="box" id="lung">
+        <img src="images/lung.jpg"
+            alt="Salmon Tacos" class="Recipe">
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <a href="#lung1" class="title">Bamboo Shoot:</a>
+            <p class="ads">
+                People in Meghalaya mainly use the shoots of the Dendrocalamus hamiltonii for fermentation wherein chopped shoots of these species are left to ferment in a water-filled container made out of bamboo.
+                 These storage units made out of bamboo are stuffed with bamboo shoots and covered with a muslin cloth while being tightly sealed on the other end. These bamboo cylinders are then hung over a water body. 
+                 The fermentation in such an arrangement takes about 3-4 months to complete. The end product is called “Lung-Siej.”</p>
+        </div>
+    </div>
+    <div class="box" id="street1">
+        <img src="images/famous.png"
+            alt="Vegan" class="Recipe">
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <a href="#street" class="title">STREET FOOD</a>
+            <p class="ads">Famous Street Food Of Meghalaya [Must Try Dishes Of Meghalaya]
+                Jadoh. Jadoh is a famous street food based in the Khasi community and is loved for its rich flavour. <br>
+
+                Doh-Khlieh. ...
+                <br>
+                Nakham Bitchi. ...
+                <br>
+                Pumaloi. ...
+                <br>
+                Dohneiiong. ...
+                <br>
+                Tungrymbai. ...
+                <br>
+                Pudoh. ...
+                <br>
+                Minil Songa. <br><br>
+            <br>
+        <br></p>
+            
+        </div>
+    </div>
+    <div class="box" id="veg1">
+        <img src="images/maxresdefault.jpg"
+            alt="Vegan" class="Recipe">
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <a href="#veg" class="title">VEGS</a>
+            <p class="ads">'Phan saw and tungtap': <br> Everyone's all time favourite.. <br>Phan and Tungtap
+                Fermented dry fish chutney or Tungtap eaten with boiled potatoes or Phan is a spicy treat enjoyed by young and old. The smokiness of the charred dry fish mixed with onion, dry chili and red chillies balanced with the sweetness of the potatoes adds to the taste of this finger licking goodness..</p>
+        
+            </div>
+    </div>
+    <div class="box" id="dohjem1">
+        <img src="images/dohjem.jpg"
+            alt="Vegan" class="Recipe">
+        
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <a href="#dohjem" class="title">DOHJEM FINALLY</a>
+            <p class="ads">Ingredients: <br>
+                1 pound pork belly (has lean meat,fat and skin-look in Asian stores or ask local butcher) or  substitute pork jowls  if you cannot find the former cut. The cut of meat is really important for this dish and should not be compromised on.
+                
+                Hold the skin against the flame to give a smoky flavor to the meat before you cut into 1 cm cubes. <br><br>
+                2 onions , gratedbr
+<br>
+                3 bayleaves
+                <br>
+                1 tsp turmeric
+                <br>
+                4 tbsp black sesame seeds :  ground
+                <br>
+                1 tbsp ginger garlic paste
+                
+                salt to taste
+                <br>
+                1 tbsp oil
+                <br><br>
+                
+                Heat oil in a saute pan and add the grated onions. Fry for 5 mins on medium heat. Add turmeric, burn the tip of the bayleaf and add to the onions to enhance the flavour of the bayleaf. Fry till the onions are transclucent. Add ginger garlic paste and the ground sesame seeds. Fry for a minute. Add the pork pieces and and season with salt. Be careful with the seasoning since its an easy dish to mess up with the salt.   Saute for about 15 mins in medium heat allowing the meat to cook in it’s own juice. Add 11/2 cup water and simmer till cooked. <br>
+                
+                <br>Enjoy with a plate of hot rice (white) or putharo (rice flour pancake). It also goes extremely well with rice flour rotis (the way it is usually prepared in Bihar) , although making the dough for that requires some practice.
+                
+                Good Eats!!.</p>
+        </div>
+    </div>
+    <div class="box" id="rymbai1">
+        <img src="images/R.jpg"
+            alt="Vegan" class="Recipe">
+        
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <a href="#rymbai" class="title">Rymbai</a>
+            <p class="ads">1 pound fermented soybean [you can get these at your local Asian store if you are outside India-there are multiple brands available, mostly Japanese and Chinese, but not the same stuff somehow. I suggest getting them from India-in case you guys come across a good brand, please let me know! Addendum: I just recently found out that some Korean stores stock fermented soy paste which is almost similar in flavor ! <br>
+<br>
+                1 cup grated onion <br>1 cup paste of garlic leaves (substitute cloves)
+                <br>
+                4 tablespoon black sesame seed paste
+                <br>
+                1 teaspoon turmeric
+                <br>
+                2 cups pork-cubed into 1 cm dimension [ don’t use pork chops: try to get meat with little fat, near the skin. Such cuts are available in Asian stores or in a small corner in your regular store along with the hocks,jaws,etc.]
+                <br>3 tablespoon Thai chilly paste
+                <br>2 tablespoon sliced ginger
+               <br> Oil to fry
+               <br> Salt to taste
+                <h2>Method:</h2>
+
+<P class="ads">Mash the fermented soybean paste and keep aside. <br>
+
+Heat oil in a pan and add onion, and fry till translucent. <br>
+
+Add garlic leaf paste, sesame seed paste, turmeric and Thai chilly paste. Fry till oil separates.
+
+<br>Add the soybean paste, salt to taste and simmer. [be careful, since branded soy paste comes with lot of sodium!! hence try getting your stash from Meghalaya if possible!]...</P>
+        </div>
+    </div>
+    <div class="box" id="jadoh1">
+        <img src="images/jadoh.jpg"
+            alt="Vegan" class="Recipe">
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <a href="#jadoh" class="title">Jadoh</a>
+            <p class="ads">Ingredients: <br>
+                1) 2 cups of hill rice/joha rice or any short grained rice, washed and drained
+                <br>
+                2)300 gms of pork (with fat)-cut into small 1/2inch cubes
+                <br>
+                3)1 medium size onion,chopped
+                <br>
+                4)1tbsp ginger paste
+                <br>
+                5)1/2 tsp of turmeric
+                <br>
+                6)1 tsp of ground black pepper
+                <br>
+                7)salt-to taste
+                <br>
+                8)2 bay leaves
+                <br>
+                9)2 tbsp of vegetable oil
+                <br>
+                10)fresh cilantro for garnishing.
+                
+               <h2> Method:(Use medium heat throughout)</h2>
+                
+                <p class="ads">Heat oil in a flat bottomed vessel. Add the onions,ginger paste,turmeric and black pepper and fry till the oil separates. <br>
+                Burn the tip of the bay leaves and immediately drop in the pan. Add the pork pieces and fry for sometime till light brown. <br>
+                Add the washed rice and fry for 2-3 minutes. Add salt. <br>
+                Add 4 cups of water and simmer till cooked. <br>
+                Garnish with cilantro and serve. <br>
+                Jadoh is best served with fermented soya paste (Tungrymbai) and Dohneiiong(pork with sesame seeds)..</p>
+                
+            
+        </div>
+    </div>
+    <div class="box" id="rice1">
+        <img src="images/Traditional-khasi-food-1024x857 putharo.jpg"
+            alt="Vegan" class="Recipe">
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <a href="#rice" class="title">Khasi Rice Cakes – Meghalaya (all in one)</a>
+            <p class="ads">There are two types of rice that are used for baking this cake; black rice, or Khaw-Iong and Khaw Mynri, which are both sourced from Ri-Bhoi. One of the major benefits of this variety of rice is that its softness lasts longer, and so does its shelf life. ‘Pumaloi’ is a ball-shaped rice steamed cake divided in half, and ‘Pu Sla’ is a steamed cake wrapped in a leaf commonly known as ‘Ka Lamet’.
+
+                The rice cakes are very popular in Meghalaya and all its districts have their own way of baking them, thus the taste differs from one place to another. Putharo is widely eaten with a combination of curried minced meat of pork or chicken, popularly known as ‘Doh-jem’. En route towards the village, one can witness the beautiful landscape from the Rilang viewpoint and leisurely spend time on the bank of the Rilang river or on the outskirts of the village. One can also camp in the hills near this river, having a picturesque view of the area.
+                
+                Accessibility:
+                
+                Distance from Shillong Airport: 3 hr 16 min (100.8 km)
+                Distance from Guwahati Airport: 5 hr 8 min (150.9 km)
+                Location:
+                .</p>
+          
+        </div>
+    </div>
+    <div class="box" id="dohkhleh1">
+        <img src="images/doohkhleh.jpg"
+            alt="Vegan" class="Recipe">
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <a href="#dohkhleh" class="title">DOHKHLEH</a>
+            <p class="ads">Dohkhlieh is a typical khasi pork dish and everyone has their own style of making it. Originally it is a simple salad recipe prepared with a handful of ingredients. The ingredients in this salad are added or minus according to the availability of the fresh ingredients. Some make this pork salad with only onion and ginger whereas some make with green chilly and onion. Seasonings are added as per ones taste buds.</p>
+            
+            
+        
+        </div>
+    </div>
+</div>
+</div>
+
+   
+
+        <br><br>
+        <br><br>
+        <hr class="hr">
+        <hr>
+        <div class="footer" id="Contactus">
+            <div class="box-container">
+                <div class="box">
+                    <h3>SOCIAL_MEDIA</h3>
+                    <a href="https://wa.link/is6kb2">WHATAPP</i></a>
+                    <a href="https://www.instagram.com/joelbanioh/?hl=en"><i
+                            class="uil uil-instagram-alt">INSTAGRAM</i></a>
+                    <a href="#">FACEBOOK</a>
+                    <a href="#">GITHUB </a>
+        
+                </div>
+                <div class="box">
+                    <h3> CONTACT_INFO </h3>
+                    <p> <i class="fas fa-map-marker-alt "></i>Meg, india 793117. </p>
+                    <p> <i class="fas fa-envelope     "></i> u17bonioh@gmail.com </p>
+                    <p> <i class="fas fa-phone     "></i> dial: +918837358219 </p>
+                    <p> <i class="fas fa-phone    "></i> dial: +000000000 </p>
+                </div>
+<div class="box">
+    <h3><i class="fas fa-map-marker-alt ">LOCATION</i></h3>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48441.44425748608!2d91.34958434521833!3d25.41303125200272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750b07eda3c8f4d%3A0x1f41b762d125ac3!2sPombriew%20Market%2C%20Rangblang!5e1!3m2!1sen!2sin!4v1659522035315!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+</div>
+            </div>
+
+            <h1 class="credit">&#169; <a href="#"> Unknown</a> all rights reserved. </h1>
+
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
